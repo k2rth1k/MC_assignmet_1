@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8009ED2728C47DE000A5FBC9 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ED2628C47DE000A5FBC9 /* RootView.swift */; };
+		8009ED2A28C47E2000A5FBC9 /* CameraView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ED2928C47E2000A5FBC9 /* CameraView.swift */; };
+		8009ED2C28C47E3700A5FBC9 /* SenderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ED2B28C47E3700A5FBC9 /* SenderView.swift */; };
+		8009ED2E28C47E5C00A5FBC9 /* Routes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ED2D28C47E5C00A5FBC9 /* Routes.swift */; };
+		8009ED3028C47FD600A5FBC9 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8009ED2F28C47FD600A5FBC9 /* AppState.swift */; };
 		80216FC128C40817006FC9F3 /* MC_assignmet_1App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FC028C40817006FC9F3 /* MC_assignmet_1App.swift */; };
 		80216FC328C40817006FC9F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FC228C40817006FC9F3 /* ContentView.swift */; };
 		80216FC528C40818006FC9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80216FC428C40818006FC9F3 /* Assets.xcassets */; };
@@ -16,6 +21,8 @@
 		80216FD728C40819006FC9F3 /* MC_assignmet_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FD628C40819006FC9F3 /* MC_assignmet_1Tests.swift */; };
 		80216FE128C40819006FC9F3 /* MC_assignmet_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FE028C40819006FC9F3 /* MC_assignmet_1UITests.swift */; };
 		80216FE328C40819006FC9F3 /* MC_assignmet_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FE228C40819006FC9F3 /* MC_assignmet_1UITestsLaunchTests.swift */; };
+		80E7050228C5302700039082 /* RestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E7050128C5302700039082 /* RestTool.swift */; };
+		80E7050428C5305E00039082 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E7050328C5305E00039082 /* Models.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +43,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		8009ED2528C43A3200A5FBC9 /* MC-assignmet-1-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "MC-assignmet-1-Info.plist"; sourceTree = SOURCE_ROOT; };
+		8009ED2628C47DE000A5FBC9 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		8009ED2928C47E2000A5FBC9 /* CameraView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraView.swift; sourceTree = "<group>"; };
+		8009ED2B28C47E3700A5FBC9 /* SenderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SenderView.swift; sourceTree = "<group>"; };
+		8009ED2D28C47E5C00A5FBC9 /* Routes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Routes.swift; sourceTree = "<group>"; };
+		8009ED2F28C47FD600A5FBC9 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
 		80216FBD28C40817006FC9F3 /* MC_assignmet_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MC_assignmet_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		80216FC028C40817006FC9F3 /* MC_assignmet_1App.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_assignmet_1App.swift; sourceTree = "<group>"; };
 		80216FC228C40817006FC9F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -48,6 +61,8 @@
 		80216FDC28C40819006FC9F3 /* MC_assignmet_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MC_assignmet_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80216FE028C40819006FC9F3 /* MC_assignmet_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_assignmet_1UITests.swift; sourceTree = "<group>"; };
 		80216FE228C40819006FC9F3 /* MC_assignmet_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_assignmet_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
+		80E7050128C5302700039082 /* RestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTool.swift; sourceTree = "<group>"; };
+		80E7050328C5305E00039082 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +90,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8009ED2828C47DF800A5FBC9 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8009ED2928C47E2000A5FBC9 /* CameraView.swift */,
+				8009ED2B28C47E3700A5FBC9 /* SenderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		80216FB428C40817006FC9F3 = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +122,19 @@
 		80216FBF28C40817006FC9F3 /* MC_assignmet_1 */ = {
 			isa = PBXGroup;
 			children = (
+				8009ED2828C47DF800A5FBC9 /* Views */,
+				8009ED2528C43A3200A5FBC9 /* MC-assignmet-1-Info.plist */,
 				80216FC028C40817006FC9F3 /* MC_assignmet_1App.swift */,
 				80216FC228C40817006FC9F3 /* ContentView.swift */,
 				80216FC428C40818006FC9F3 /* Assets.xcassets */,
 				80216FC928C40818006FC9F3 /* Persistence.swift */,
 				80216FCB28C40818006FC9F3 /* MC_assignmet_1.xcdatamodeld */,
 				80216FC628C40818006FC9F3 /* Preview Content */,
+				8009ED2628C47DE000A5FBC9 /* RootView.swift */,
+				8009ED2D28C47E5C00A5FBC9 /* Routes.swift */,
+				8009ED2F28C47FD600A5FBC9 /* AppState.swift */,
+				80E7050128C5302700039082 /* RestTool.swift */,
+				80E7050328C5305E00039082 /* Models.swift */,
 			);
 			path = MC_assignmet_1;
 			sourceTree = "<group>";
@@ -263,10 +294,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80E7050428C5305E00039082 /* Models.swift in Sources */,
 				80216FCA28C40818006FC9F3 /* Persistence.swift in Sources */,
+				8009ED2E28C47E5C00A5FBC9 /* Routes.swift in Sources */,
+				8009ED2C28C47E3700A5FBC9 /* SenderView.swift in Sources */,
+				80E7050228C5302700039082 /* RestTool.swift in Sources */,
+				8009ED3028C47FD600A5FBC9 /* AppState.swift in Sources */,
 				80216FCD28C40818006FC9F3 /* MC_assignmet_1.xcdatamodeld in Sources */,
 				80216FC328C40817006FC9F3 /* ContentView.swift in Sources */,
+				8009ED2A28C47E2000A5FBC9 /* CameraView.swift in Sources */,
 				80216FC128C40817006FC9F3 /* MC_assignmet_1App.swift in Sources */,
+				8009ED2728C47DE000A5FBC9 /* RootView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,6 +466,8 @@
 				DEVELOPMENT_TEAM = 47LK4PY7LV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MC-assignmet-1-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +497,8 @@
 				DEVELOPMENT_TEAM = 47LK4PY7LV;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "MC-assignmet-1-Info.plist";
+				INFOPLIST_KEY_NSCameraUsageDescription = "This app would like to use camera";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
