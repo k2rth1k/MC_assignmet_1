@@ -9,4 +9,5 @@ import SwiftUI
 class AppState: ObservableObject{
     @Published var route = routesType.camera
     @Published var capturePhoto: Image?
+
 }

@@ -1,49 +1,74 @@
 import SwiftUI
 
 struct ContentView: View {
-    @State var isActive : Bool = false
-
+    @EnvironmentObject var network: Network
+    @State var getUsers = false
+    @State var postedVaesd = false
+    @State var freeBoard = true
     var body: some View {
-        NavigationView {
-            NavigationLink(
-                destination: ContentView2(rootIsActive: self.$isActive),
-                isActive: self.$isActive
-            ) {
-                Text("Hello, World!")
-            }
-            .isDetailLink(false)
-            .navigationBarTitle("Root")
+        if(postedVaesd){
+                HStack{
+                    Spacer()
+                    Spacer()
+                    Text(network.posterResp?.name ?? "default")
+                    Spacer()
+                }
         }
-    }
-}
+        if getUsers{
+                ScrollView {
+                    Text("All users")
+                        .font(.title)
+                        .bold()
 
-struct ContentView2: View {
-    @Binding var rootIsActive : Bool
+                    VStack(alignment: .leading) {
+                        ForEach(network.users) { user in
+                            HStack(alignment:.top) {
+                                Text("\(user.id)")
 
-    var body: some View {
-        NavigationLink(destination: ContentView3(shouldPopToRootView: self.$rootIsActive)) {
-            Text("Hello, World #2!")
+                                VStack(alignment: .leading) {
+                                    Text(user.name)
+                                        .bold()
+
+                                    Text(user.email.lowercased())
+
+                                    Text(user.phone)
+                                }
+                            }
+                            .frame(width: 300, alignment: .leading)
+                            .padding()
+                            .background(Color(#colorLiteral(red: 0.6667672396, green: 0.7527905703, blue: 1, alpha: 0.2662717301)))
+                            .cornerRadius(20)
+                        }
+                    }
+
+                }
+                .padding(.vertical)
         }
-        .isDetailLink(false)
-        .navigationBarTitle("Two")
-    }
-}
-
-struct ContentView3: View {
-    @Binding var shouldPopToRootView : Bool
-
-    var body: some View {
-        VStack {
-            Text("Hello, World #3!")
-            Button (action: { self.shouldPopToRootView = false } ){
-                Text("Pop to root")
+        if (freeBoard){
+            VStack{
+                Button(action: {
+                    network.getUsers()
+                    getUsers=true
+                    freeBoard=false
+                }, label:{
+                    Text("Get users")
+                })
+                Button(action: {
+                   network.postUser()
+                    postedVaesd = true
+                    freeBoard=false
+                }, label: {
+                    Text("make post")
+                })
             }
-        }.navigationBarTitle("Three")
+        }
     }
 }
 
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
+            .environmentObject(Network())
+
     }
 }
