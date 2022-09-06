@@ -8,11 +8,11 @@
 import SwiftUI
 
 struct RootView: View {
-    
-    @StateObject var appState : AppState
-    
+
+    @StateObject var appState: AppState
+
     var body: some View {
-        switch appState.route{
+        switch appState.route {
         case routesType.camera:
             CustomCameraPhotoView(appState: appState)
         case routesType.sender:
