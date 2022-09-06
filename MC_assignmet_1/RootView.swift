@@ -14,7 +14,7 @@ struct RootView: View {
     var body: some View {
         switch appState.route{
         case routesType.camera:
-            CameraView(appState: appState)
+            CustomCameraPhotoView(appState: appState)
         case routesType.sender:
             SenderView(appState: appState)
         }
