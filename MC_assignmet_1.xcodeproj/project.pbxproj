@@ -16,11 +16,11 @@
 		80216FC328C40817006FC9F3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FC228C40817006FC9F3 /* ContentView.swift */; };
 		80216FC528C40818006FC9F3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80216FC428C40818006FC9F3 /* Assets.xcassets */; };
 		80216FC828C40818006FC9F3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 80216FC728C40818006FC9F3 /* Preview Assets.xcassets */; };
-		80216FCA28C40818006FC9F3 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FC928C40818006FC9F3 /* Persistence.swift */; };
 		80216FCD28C40818006FC9F3 /* MC_assignmet_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 80216FCB28C40818006FC9F3 /* MC_assignmet_1.xcdatamodeld */; };
 		80216FD728C40819006FC9F3 /* MC_assignmet_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FD628C40819006FC9F3 /* MC_assignmet_1Tests.swift */; };
 		80216FE128C40819006FC9F3 /* MC_assignmet_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FE028C40819006FC9F3 /* MC_assignmet_1UITests.swift */; };
 		80216FE328C40819006FC9F3 /* MC_assignmet_1UITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80216FE228C40819006FC9F3 /* MC_assignmet_1UITestsLaunchTests.swift */; };
+
 		80E7050228C5302700039082 /* RestTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E7050128C5302700039082 /* RestTool.swift */; };
 		80E7050428C5305E00039082 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80E7050328C5305E00039082 /* Models.swift */; };
 /* End PBXBuildFile section */
@@ -54,7 +54,6 @@
 		80216FC228C40817006FC9F3 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		80216FC428C40818006FC9F3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		80216FC728C40818006FC9F3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		80216FC928C40818006FC9F3 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		80216FCC28C40818006FC9F3 /* MC_assignmet_1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MC_assignmet_1.xcdatamodel; sourceTree = "<group>"; };
 		80216FD228C40819006FC9F3 /* MC_assignmet_1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MC_assignmet_1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		80216FD628C40819006FC9F3 /* MC_assignmet_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_assignmet_1Tests.swift; sourceTree = "<group>"; };
@@ -63,6 +62,7 @@
 		80216FE228C40819006FC9F3 /* MC_assignmet_1UITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MC_assignmet_1UITestsLaunchTests.swift; sourceTree = "<group>"; };
 		80E7050128C5302700039082 /* RestTool.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RestTool.swift; sourceTree = "<group>"; };
 		80E7050328C5305E00039082 /* Models.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,7 +127,6 @@
 				80216FC028C40817006FC9F3 /* MC_assignmet_1App.swift */,
 				80216FC228C40817006FC9F3 /* ContentView.swift */,
 				80216FC428C40818006FC9F3 /* Assets.xcassets */,
-				80216FC928C40818006FC9F3 /* Persistence.swift */,
 				80216FCB28C40818006FC9F3 /* MC_assignmet_1.xcdatamodeld */,
 				80216FC628C40818006FC9F3 /* Preview Content */,
 				8009ED2628C47DE000A5FBC9 /* RootView.swift */,
